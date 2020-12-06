@@ -22,12 +22,12 @@ module WeightManagementApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
-    # ********** 以下を追加 **********
+    
     # 日本語に変更
     config.i18n.default_locale = :ja
     # タイムゾーンも変更
     config.time_zone = 'Asia/Tokyo'
-    # ********** 以上を追加 **********
+   
     
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
