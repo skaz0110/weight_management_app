@@ -33,6 +33,27 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+# ***** 以下を追加 *****
+# ログイン機能
+gem 'devise'
+
+# 日本語化
+gem 'rails-i18n', '~> 5.1'
+gem 'devise-i18n'
+
+# Bootstrap（簡単に見た目を整えられる）
+gem 'bootstrap', '~> 4.4.1'
+gem 'jquery-rails'
+# ログイン関連ページにBootstrapを適用するGem
+gem 'devise-bootstrap-views', '~> 1.0'
+
+# Chart.js（グラフ表示）
+gem 'chart-js-rails'
+# flatpickr（カレンダー）
+gem 'flatpickr'
+# Gon（コントローラから Javascript に変数を渡せるようにする）
+gem 'gon'
+# ***** 以上を追加 *****
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -40,6 +61,10 @@ group :development, :test do
 end
 
 group :development do
+  # ***** 以下を追加 *****
+  # デバッグで利用
+  gem 'pry-byebug'
+  # ***** 以上を追加 *****
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
